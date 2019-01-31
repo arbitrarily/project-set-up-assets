@@ -61,7 +61,7 @@ $loop = new WP_Query( $args );
 									<p class="article__paragraph"><?php echo $excerpt; ?></p>
 								</div>
 
-								<div class="featured-link">
+								<div class="article__featured-link">
 									<a href="<?php echo $url; ?>">
 										<i class="fa fa-arrow-right"></i>
 										Read More
