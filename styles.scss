@@ -1,0 +1,25 @@
+/**
+ * styles.scss
+ * ---
+ * Main `sass` file. Import here `sass` files
+ */
+
+// Foundation
+// @import "../../../node_modules/foundation-sites/assets/foundation-float";
+@import "../../../node_modules/foundation-sites/assets/foundation-prototype";
+
+// Modules
+@import "modules/variables";
+@import "modules/mixins";
+@import "modules/fonts";
+
+// Partials
+@import "partials/reset";
+@import "partials/utils";
+@import "partials/header";
+// @import "partials/wordpress";
+// @import "partials/wrapper";
+// @import "partials/nav";
+// @import "partials/sidebar";
+@import "partials/footer";
+@import "partials/print";

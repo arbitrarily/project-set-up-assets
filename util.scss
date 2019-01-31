@@ -1,0 +1,74 @@
+/**
+ * partials/utils
+ * ---
+ * Utils classes
+ */
+
+
+// clearfix: http://nicolasgallagher.com/micro-clearfix-hack/
+.clear {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+.reset-box {
+  @include reset-box;
+}
+
+html {
+  @include transition(opacity 888ms ease-in-out);
+  @include opacity(0);
+  &.font-active {
+    @include opacity(1);
+  }
+}
+
+// .column:last-child:not(:first-child),
+// .columns:last-child:not(:first-child) {
+//   float: left;
+// }
+
+.position-relative {
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    text-decoration: none !important;
+  }
+}
+
+.row {
+  max-width: 100rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  font-family: $font-family-base;
+}
+
+p {
+  font-family: $font-family-base;
+}
+

@@ -1,0 +1,11 @@
+/*!
+ * Theme Name: #########
+ * Theme URI:
+ * Description: Wordpress Theme designed by Marko Bajlovic & Aaron Baker
+ * Version: 1.0.2
+ * Author: Marko Bajlovic, Aaron Baker
+ * Author URI: tba
+ *
+ * License: Attribution-NonCommercial-NoDerivatives 4.0 International
+ * License URI: http://creativecommons.org/licenses/by-nc-nd/4.0/
+*/
