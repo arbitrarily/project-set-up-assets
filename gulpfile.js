@@ -22,7 +22,7 @@ var gulp = require( "gulp" ),
 		// Flexslider
 		// "node_modules/flexslider/jquery.flexslider.js",
 		// Match Height
-		"node_modules/jquery-match-height/jquery.matchHeight.js",
+		// "node_modules/jquery-match-height/jquery.matchHeight.js",
 		/** Page scripts */
 		"src/js/scripts.js"
 	],
