@@ -128,7 +128,7 @@ function html5blank_conditional_scripts() {
 function html5blank_styles() {
     if ( HTML5_DEBUG ) {
         // normalize-css
-        wp_register_style( 'normalize', get_template_directory_uri() . '/bower_components/normalize.css/normalize.css', array(), '3.0.1' );
+        // wp_register_style( 'normalize', get_template_directory_uri() . '/bower_components/normalize.css/normalize.css', array(), '3.0.1' );
 
         // Custom CSS
         wp_register_style( 'html5blank', get_template_directory_uri() . '/style.css', array( 'normalize' ), THE_VERSION_NUMBER );
