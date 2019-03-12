@@ -270,7 +270,6 @@ add_filter( 'wp_nav_menu_args', 'my_wp_nav_menu_args' ); // Remove surrounding <
 add_filter( 'the_category', 'remove_category_rel_from_category_list' ); // Remove invalid rel attribute
 add_filter( 'the_excerpt', 'shortcode_unautop' ); // Remove auto <p> tags in Excerpt (Manual Excerpts only)
 add_filter( 'the_excerpt', 'do_shortcode' ); // Allows Shortcodes to be executed in Excerpt (Manual Excerpts only)
-add_filter( 'excerpt_more', 'html5_blank_view_article' ); // Add 'View Article' button instead of [...] for Excerpts
 add_filter( 'show_admin_bar', 'remove_admin_bar' ); // Remove Admin bar
 add_filter( 'style_loader_tag', 'html5_style_remove' ); // Remove 'text/css' from enqueued stylesheet
 add_filter( 'post_thumbnail_html', 'remove_thumbnail_dimensions', 10 ); // Remove width and height dynamic attributes to thumbnails
@@ -303,15 +302,13 @@ function html5_shortcode_demo_2( $atts, $content = null ) {
 \*------------------------------------*/
 
 if ( function_exists('acf_add_options_page') ) {
-
     acf_add_options_page(array(
-        'page_title'    => 'Theme General Settings',
+        'page_title'    => 'Theme Settings',
         'menu_title'    => 'Theme Settings',
-        'menu_slug'     => 'theme-general-settings',
+        'menu_slug'     => 'theme-settings',
         'capability'    => 'edit_posts',
         'redirect'      => false
     ));
-
 }
 
 /*------------------------------------*

@@ -77,6 +77,7 @@ gulp.task( "copy", function() {
 			"src/modules/*.php",
 			"src/inc/*.php",
 			"src/template-parts/*.php",
+			"src/ajax/*.php",
 			"src/img/**/*.{jpg,png,svg,gif,webp,ico}",
 			"src/fonts/*.{woff,woff2,ttf,otf,eot,svg}",
 			"src/languages/*.{po,mo,pot}"

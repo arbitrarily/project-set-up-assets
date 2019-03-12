@@ -16,8 +16,6 @@ $loop = new WP_Query( $args );
 			if ( $loop->have_posts() ) {
 				$count = 0;
 				while ( $loop->have_posts() ) : $loop->the_post();
-					// Skip if ACF Not Active
-					if (!function_exists('get_fields')) continue;
 
 					$acf = get_fields();
 					$title = get_the_title();
@@ -72,7 +70,6 @@ $loop = new WP_Query( $args );
 						</article>
 
 					<?php
-					endif;
 					$count++;
 				endwhile;
 			}
