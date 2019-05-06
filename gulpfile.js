@@ -234,3 +234,5 @@ gulp.task( "build", [
 /** Gulp default task */
 gulp.task( "default", ["watch"] );
 
+// Run on Initial Build
+gulp.task( "init", [ "template", "styles", "jshint", "modernizr", "jquery", "normalize" ]);
