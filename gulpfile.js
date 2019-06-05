@@ -20,7 +20,7 @@ var gulp = require( "gulp" ),
 		// Magnfic
 		// "node_modules/magnific-popup/dist/jquery.magnific-popup.js",
 		// Flexslider
-		// "node_modules/flexslider/jquery.flexslider.js",
+		// "node_modules/slick-carousel/slick/slick.js",
 		// Match Height
 		// "node_modules/jquery-match-height/jquery.matchHeight.js",
 		/** Page scripts */
