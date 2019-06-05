@@ -86,6 +86,9 @@ function html5blank_header_scripts() {
             // Font Face Observer
             wp_register_script('font-face-observer', get_theme_root_uri() . '/REPLACEMEPLEASE/node_modules/fontfaceobserver/fontfaceobserver.js', array(), '2.0.13');
 
+            // Slick Slider
+            wp_register_script('slick', get_theme_root_uri() . '/REPLACEMEPLEASE/node_modules/slick-carousel/slick/slick.js', array(), '1.8.1');
+
             // Font Awesome
             wp_register_script(
                 'html5blankscripts',
@@ -96,7 +99,8 @@ function html5blank_header_scripts() {
                     'conditionizr',
                     'modernizr',
                     'jquery',
-                    'font-awesome'
+                    'font-awesome',
+                    'slick'
                 ),
                 THE_VERSION_NUMBER );
 
