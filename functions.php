@@ -74,9 +74,6 @@ function html5blank_header_scripts() {
             // Conditionizr
             wp_register_script( 'conditionizr', get_template_directory_uri() . '/js/lib/conditionizr-4.3.0.min.js', array(), '4.3.0' );
 
-            // Modernizr
-            wp_register_script( 'modernizr', get_template_directory_uri() . '/js/lib/modernizr.js', array(), '3.7.1' );
-
             // Font Awesome
             wp_register_script('font-awesome', 'https://use.fontawesome.com/ac964b0016.js', array(), '4.7.0');
 
@@ -97,7 +94,6 @@ function html5blank_header_scripts() {
                     'webfont-loader',
                     'font-face-observer',
                     'conditionizr',
-                    'modernizr',
                     'jquery',
                     'font-awesome',
                     'slick'

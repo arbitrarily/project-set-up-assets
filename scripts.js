@@ -9,7 +9,7 @@
 
 		var ######## = {
 
-			touch: (Modernizr.touchevents ? "touchstart" : "click"),
+			touch: ("ontouchstart" in document.documentElement ? "touchstart" : "click"),
 
 			init: function() {
 				this.fonts();
