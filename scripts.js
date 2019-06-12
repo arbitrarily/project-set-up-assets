@@ -36,13 +36,17 @@
 						sessionStorage.fonts = true;
 					}
 				});
+
 				// Check for Font
 				var font = new FontFaceObserver("Open Sans", {
 					weight: 300
 				});
-				font.load().then(function() {
+				Promise.all([
+					font.load()
+				]).then(function() {
 					$("html").addClass("font-active");
 				});
+
 				// Fallback
 				setTimeout(function() {
 					if (!$("html").hasClass("font-active")) {
