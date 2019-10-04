@@ -135,7 +135,7 @@ function html5blank_styles() {
         wp_register_style( 'slick-theme', get_theme_root_uri() . '/REPLACEMEPLEASE/node_modules/slick-carousel/slick/slick-theme.css', array(), '1.8.1' );
 
         // Custom CSS
-        wp_register_style( 'html5blank', get_template_directory_uri() . '/style.css', array( 'normalize' ), THE_VERSION_NUMBER );
+        wp_register_style( 'html5blank', get_template_directory_uri() . '/style.css', array(), THE_VERSION_NUMBER );
 
         // Register CSS
         wp_enqueue_style( 'slick' );
