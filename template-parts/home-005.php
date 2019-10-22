@@ -9,8 +9,8 @@ $loop = new WP_Query( $args );
 ?>
 
 <section class="section section-home">
-	<div class="row">
-		<div class="columns small-10 medium-5 large-6 small-centered section-home__content">
+	<div class="grid-x">
+		<div class="cell auto">
 
 			<?php
 			if ( $loop->have_posts() ) {

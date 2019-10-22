@@ -2,7 +2,7 @@
  * Theme Name: #########
  * Theme URI:
  * Description: Wordpress Theme designed by Marko Bajlovic & Aaron Baker
- * Version: 1.0.3
+ * Version: 1.0.4
  * Author: Marko Bajlovic, Aaron Baker
  * Author URI: tba
  *
