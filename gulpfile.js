@@ -181,8 +181,7 @@ gulp.task( "watch", [ "template", "styles", "jshint", "modernizr", "jquery", "no
 	/** Watch for livereoad */
 	gulp.watch([
 		"src/js/**/*.js",
-		"src/*.php",
-		"src/*.css"
+		"src/*.php"
 	]).on( "change", function( file ) {
 		console.log( file.path );
 		server.changed( file.path );
