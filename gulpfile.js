@@ -75,6 +75,7 @@ gulp.task( "copy", function() {
 	return gulp.src([
 			"src/*.{php,png,css}",
 			"src/modules/*.php",
+			"src/acf-json/*.json",
 			"src/inc/*.php",
 			"src/template-parts/*.php",
 			"src/ajax/*.php",
