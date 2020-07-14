@@ -190,7 +190,7 @@ gulp.task( "watch", [ "template", "styles", "jshint", "modernizr", "jquery", "no
 
 	/** Watch for autoprefix */
 	gulp.watch( [
-		"src/css/*.css",
+		// "src/css/*.css",
 		"src/css/sass/**/*.scss"
 	], [ "styles" ] );
 
