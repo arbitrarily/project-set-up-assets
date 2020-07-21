@@ -19,8 +19,8 @@ var gulp = require( "gulp" ),
 		"src/bower_components/jquery/dist/jquery.js",
 		// Magnfic
 		// "node_modules/magnific-popup/dist/jquery.magnific-popup.js",
-		// Flexslider
-		// "node_modules/slick-carousel/slick/slick.js",
+		// Slick
+		"node_modules/slick-carousel/slick/slick.js",
 		// Match Height
 		// "node_modules/jquery-match-height/jquery.matchHeight.js",
 		/** Page scripts */
@@ -41,8 +41,9 @@ var gulp = require( "gulp" ),
 			"node_modules/normalize.css/normalize.css",
 			// Magnific
 			// "node_modules/magnific-popup/dist/magnific-popup.css",
-			// Flexslider
-			// "node_modules/flexslider/flexslider.css",
+			// Slick
+			"node_modules/slick-carousel/slick/slick.css",
+			"node_modules/slick-carousel/slick/slick-theme.css",
 			/** Theme style */
 			"src/css/style.css"
 		]
