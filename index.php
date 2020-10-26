@@ -8,19 +8,19 @@ get_header();
 		<?php
 
 		// Section One
-		get_template_part( 'template-parts/home', '001' );
+		get_template_part( 'template-parts/home', 'intro' );
 
 		// Section Two
-		get_template_part( 'template-parts/home', '002' );
+		get_template_part( 'template-parts/home', 'mission' );
 
 		// Section Three
-		get_template_part( 'template-parts/home', '003' );
+		get_template_part( 'template-parts/home', 'about' );
 
 		// Section Four
-		get_template_part( 'template-parts/home', '004' );
+		get_template_part( 'template-parts/home', 'features' );
 
 		// Section Five
-		get_template_part( 'template-parts/home', '005' );
+		get_template_part( 'template-parts/home', 'loop' );
 
 		?>
 
