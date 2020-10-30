@@ -103,9 +103,9 @@ function ordinal($cdnl){
             ? 'th' : 'st' : 'nd' : 'rd' : 'th'));
     return $cdnl.$ext;
 }
-for($i=1;$i<100;$i++){
-    echo ordinal($i).'<br>';
-}
+// for ($i=1; $i<100; $i++) {
+//     echo ordinal($i) . '<br>';
+// }
 
 // Check if String Begins with Substring
 function startsWith($string, $startString) {
