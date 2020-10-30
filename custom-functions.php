@@ -36,9 +36,9 @@ function read_time( $content ) {
 function load_inline_svg( $filename ) {
 
     // Check the SVG file exists
-    if ( file_exists( get_parent_theme_file_path() . '/img/' . $filename ) ) {
+    if ( file_exists( $filename ) ) {
         // Load and return the contents of the file
-        return file_get_contents( get_parent_theme_file_path() . '/img/' . $filename );
+        return file_get_contents( $filename );
     }
 
     // Return a blank string if we can't find the file.
