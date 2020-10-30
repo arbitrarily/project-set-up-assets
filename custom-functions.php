@@ -44,12 +44,15 @@ function load_inline_svg( $filename ) {
     // Return a blank string if we can't find the file.
     return '';
 }
+// Usage:
+// echo load_inline_svg(get_template_directory() . '/img/icons/icon__leaf--green.svg');
 
 // Slugify a String
 function create_slug($str, $delimiter = '-'){
     $slug = strtolower(trim(preg_replace('/[\s-]+/', $delimiter, preg_replace('/[^A-Za-z0-9-]+/', $delimiter, preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $str))))), $delimiter));
     return $slug;
 }
+// Alternative:
 // function slugify($string){
 //   return strtolower(trim(preg_replace('/[^A-Za-z0-9-]+/', '-', $string), '-'));
 // }
@@ -103,6 +106,7 @@ function ordinal($cdnl){
             ? 'th' : 'st' : 'nd' : 'rd' : 'th'));
     return $cdnl.$ext;
 }
+// Usage:
 // for ($i=1; $i<100; $i++) {
 //     echo ordinal($i) . '<br>';
 // }
