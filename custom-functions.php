@@ -154,10 +154,25 @@ function order_by($items, $attr, $order) {
 }
 
 // Get the Median
-function median($numbers) {
+function calculate_median($numbers) {
   sort($numbers);
   $totalNumbers = count($numbers);
   $mid = floor($totalNumbers / 2);
 
   return ($totalNumbers % 2) === 0 ? ($numbers[$mid - 1] + $numbers[$mid]) / 2 : $numbers[$mid];
+}
+
+// Get the average
+function calculate_average($numbers) {
+    $count = count($numbers);
+    foreach ($numbers as $value) {
+        $total = $total + $value;
+    }
+    $average = ($total / $count);
+    return $average;
+}
+
+// Check array for Duplicates:
+function has_duplicates($items) {
+    return count($items) > count(array_unique($items));
 }
