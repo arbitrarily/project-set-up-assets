@@ -7,10 +7,6 @@ var gulp = require( "gulp" ),
 	$ = require( "gulp-load-plugins" )(),
 	/** @type {Array} JS source files to concatenate and uglify */
 	uglifySrc = [
-		/** Modernizr */
-		"src/bower_components/modernizr/dist/modernizr-build.js",
-		/** Conditionizr */
-		"src/js/lib/conditionizr-4.3.0.min.js",
 		/** WebFont Loader */
 		"src/bower_components/bower-webfontloader/webfont.js",
 		/** FontFaceObserver */
