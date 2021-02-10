@@ -306,8 +306,8 @@ function html5_shortcode_demo_2( $atts, $content = null ) {
 \*------------------------------------*/
 
 function do_pages_exist() {
-    // ###
-    // if( get_page_by_title( '###' ) == NULL ) create_page( '###' );
+    // Home
+    if ( get_page_by_title( 'Home' ) == NULL ) create_page( 'Home' );
 }
 add_action('init', 'do_pages_exist');
 
@@ -324,6 +324,19 @@ function create_page( $name ) {
     // Insert the post into the database
     wp_insert_post( $createPage );
 }
+
+/*------------------------------------*\
+    Create Page Templates
+\*------------------------------------*/
+
+function create_custom_page_templates() {
+    $page = get_page_by_title('Home');
+
+    if ($page) {
+        update_post_meta( $page->ID, '_wp_page_template', 'page-home.php' );
+    }
+}
+add_action('init', 'create_custom_page_templates');
 
 /*------------------------------------*\
     ACF Options Page
