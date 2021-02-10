@@ -334,6 +334,9 @@ function create_custom_page_templates() {
 
     if ($page) {
         update_post_meta( $page->ID, '_wp_page_template', 'page-home.php' );
+
+        update_option( 'page_on_front', $page->ID );
+        update_option( 'show_on_front', 'page' );
     }
 }
 add_action('init', 'create_custom_page_templates');
