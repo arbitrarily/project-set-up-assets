@@ -330,13 +330,26 @@ function create_page( $name ) {
 \*------------------------------------*/
 
 function create_custom_page_templates() {
-    $page = get_page_by_title('Home');
+    $pages = array(
+        array(
+            'page' => get_page_by_title('Home'),
+            'template' => 'page-home.php'
+        ),
+        // array(
+        //     'page' => get_page_by_title('About'),
+        //     'template' => 'page-about.php'
+        // ),
+    );
 
-    if ($page) {
-        update_post_meta( $page->ID, '_wp_page_template', 'page-home.php' );
+    foreach ($pages as $page) {
+        if ($page) {
+            update_post_meta( $page['page']->ID, '_wp_page_template', $page['template'] );
 
-        update_option( 'page_on_front', $page->ID );
-        update_option( 'show_on_front', 'page' );
+            if ($page['template'] === 'page-home.php') {
+                update_option( 'page_on_front', $page['page']->ID );
+                update_option( 'show_on_front', 'page' );
+            }
+        }
     }
 }
 add_action('init', 'create_custom_page_templates');
