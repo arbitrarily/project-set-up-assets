@@ -176,3 +176,36 @@ function calculate_average($numbers) {
 function has_duplicates($items) {
     return count($items) > count(array_unique($items));
 }
+
+// Isset?
+function am_isset($val) {
+    return ( isset($val) && !empty($val) );
+}
+
+// Fancy Debug
+function am_dump($var, $name = null) {
+    echo "<div style='padding:10px;background:rgba(0,0,0,.1);position:relative;'>";
+    if ( $name ) {
+        echo "<div style='font-weight:bold;padding:20px;border: 1px dashed #aaa;'>" . $name . "</div>";
+    }
+    echo "<xmp style='max-height: 400px;overflow-y: scroll;padding: 20px;font-size: 12px;border: 1px dashed #aaa;margin-bottom: 20px;'>";
+
+    // Output
+    if ( is_array($var) ) {
+        print_r($var);
+    } else if ( gettype($var) == "object" ) {
+        print_r($var);
+    } else if ( $var === null ) {
+        echo "NULL";
+    } else if ( is_bool($var) ) {
+        if ($var) {
+            echo "TRUE";
+    } else {
+            echo "FALSE";
+        }
+    }  else {
+        print_r($var);
+    }
+    echo "</xmp>";
+    echo "</div>";
+}
