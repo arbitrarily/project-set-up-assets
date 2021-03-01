@@ -74,9 +74,10 @@ gulp.task( "copy", function() {
 			"src/modules/*.php",
 			"src/acf-json/*.json",
 			"src/inc/*.php",
+			"src/alm_templates/default.php",
 			"src/template-parts/*.php",
 			"src/ajax/*.php",
-			"src/img/**/*.{jpg,png,svg,gif,webp,ico}",
+			"src/img/**/*.{jpg,png,svg,gif,webp,ico,xml,webmanifest}",
 			"src/fonts/*.{woff,woff2,ttf,otf,eot,svg}",
 			"src/languages/*.{po,mo,pot}"
 		], {
