@@ -9,13 +9,12 @@ windows:
         - php -S localhost:9999
       - commands:
         - sleep 5
-        - cd wp-content/themes/PROJECTNAME
+        - cd wp-content/themes/PROJECTNAME/assets
         - npm run dev
       - commands:
         - sleep 5
         - subl ~/Git/PROJECTNAME
         - open -a "Firefox Developer Edition" http://localhost:9999 && git status
       - commands:
-        - sleep 5
         - ls -lhaGF
         # - ssh am@IPADDRESS
