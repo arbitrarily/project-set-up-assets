@@ -1,0 +1,21 @@
+windows:
+  - name: NAME
+    root: ~/Git/PROJECTNAME
+    layout: tiled
+    panes:
+      - commands:
+        - git pull
+        - kill -9 $(lsof -i:9999 -t)
+        - php -S localhost:9999
+      - commands:
+        - sleep 5
+        - cd wp-content/themes/PROJECTNAME
+        - npm run dev
+      - commands:
+        - sleep 5
+        - subl ~/Git/PROJECTNAME
+        - open -a "Firefox Developer Edition" http://localhost:9999 && git status
+      - commands:
+        - sleep 5
+        - ls -lhaGF
+        # - ssh am@IPADDRESS
