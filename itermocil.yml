@@ -9,7 +9,7 @@ windows:
         - php -S localhost:9999
       - commands:
         - sleep 5
-        - cd wp-content/themes/PROJECTNAME/assets
+        - cd wp-content/themes/am/assets
         - npm run dev
       - commands:
         - sleep 5
