@@ -10,6 +10,7 @@ windows:
       - commands:
         - sleep 5
         - cd wp-content/themes/am/assets
+        - nvm use lts/fermium
         - npm run dev
       - commands:
         - sleep 5
